@@ -1,0 +1,32 @@
+.align-center{ 
+    background-color: darksalmon;
+    color: gold;
+    text-align: center; 
+    font-size: large;
+}
+.about-section{
+    background-color: beige;
+     color: rgb(73, 57, 29); 
+     font-family: "遊明朝体"; 
+     margin: 30px;
+    }
+.skills-list{
+    color: chocolate; 
+    padding: 10px;
+}
+.skills-list  p {
+    color: red; padding: 20px;
+}
+.contact-form input:nth-of-type(2){
+    color: green;
+}
+.contact-form input:first-of-type{
+    padding: 30px;
+    font-size: large;
+}
+.form-container{ 
+    display: flex; 
+    flex-direction: row;
+    align-items: flex-end; 
+    justify-content: flex-start;
+}

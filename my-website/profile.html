@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロフィール</title>
+    <link rel="stylesheet" href="style.css">
+    <script>console.log("こんにちは")</script>
+</head>
+<body>
+    <header class="page-header">
+        <h1 class="align-center">
+            <a href="profile.html">Rena Shirahata</a>
+        </h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#abount">自己紹介</a></li>
+                <li><a href="#skills">スキルリスト</a></li>
+                <l1><a href="#contact">連絡先フォーム</a></l1>
+            </ul>
+        </nav>
+        <section id="about" class="about-section">
+            <h2>自己紹介</h2>
+            <p>白幡玲奈です。趣味は柔術です。</p>
+            <button id="clickButton">Click me</button>
+        </section>
+        <section id="skills" class="skills-list">
+            <h2 style="color: red;">スキルリスト</h2>
+            <div onmouseover="this.style.backgroundColor='lightblue'" onmouseout="this.style.backgroundColor='white'">マウスを重ねてください</div> 
+            <p>簿記３級</p>
+            <p>自己分析</p>
+            <p>ストーリー性</p>
+            <button onclick="alert('ボタンがクリックされました！')">click me</button><div id="hoverDiv">マウスを重ねてください</div>
+        </section>
+        <section id="contact" class="contact-form">
+            <h2>連絡先フォーム</h2>
+            <form class="form-container" onsubmit="confirm('送信してもよろしいですか？')">
+            <input type="text" placeholder="氏名" />
+            <input type="submit" value="送信する">
+        </form>
+        <form id="contactForm">
+            <input type="text" name="name" required>
+            <button type="submit">送信</button>
+          </form>
+            <p>shirahata.rena@marsquai.jp</p>
+        </section>
+    </header>
+</body>
+<script src="script.js"></script>
+</html>
